@@ -1,0 +1,108 @@
+:root {
+  --r-logo-color: #ff5a5f;
+  --r-heading-color: var(--r-logo-color);
+  --r-heading1-text-shadow: none;
+  --r-main-color: #484848;
+}
+
+#__next {
+  height: 100vh;
+  width: 100vw;
+}
+
+.reveal-viewport {
+  background: white;
+}
+
+.reveal blockquote {
+  border: 4px dashed #00a699;
+  box-shadow: none;
+  color: #00a699;
+}
+
+.reveal .chapter-break {
+  --r-main-color: white;
+  color: var(--r-main-color);
+}
+
+.reveal .chapter-break :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--r-main-color);
+}
+
+.reveal pre code {
+  max-height: 500px;
+}
+
+.reveal pre code::before {
+  content: '';
+  display: block;
+  height: 32px;
+}
+
+.reveal pre code::after {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8%2BCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDYyIDEyIiB3aWR0aD0iNjIiIGhlaWdodD0iMTIiPgoJPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNmZjVhNTIiPjwvY2lyY2xlPgoJPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjZTZjMDI4Ij48L2NpcmNsZT4KCTxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzU0YzIyYiI%2BPC9jaXJjbGU%2BCjwvc3ZnPg%3D%3D);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  height: 32px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* --- */
+
+@font-face {
+  font-family: 'xkcd';
+  src: url('/font/xkcd-script.woff') format('woff');
+}
+
+section {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg {
+  font-family: 'xkcd';
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  text-align: left;
+}
+
+.mermaid-svg {
+  /* height: 100%; */
+  flex: 1;
+}
+
+.reveal .hljs {
+  min-height: min-content;
+}
+
+.reveal .code-block {
+  margin: calc(var(--r-block-margin) * -1) 0;
+  width: 100%;
+}
+
+/* --- */
+
+.reveal .layout-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: -10px;
+}
+
+.reveal .layout-row > * {
+  flex: 1;
+  margin: 10px;
+  height: fit-content;
+}
+
+.reveal .layout-row > svg {
+  height: auto;
+}

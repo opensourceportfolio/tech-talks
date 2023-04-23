@@ -1,3 +1,38 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["simple-import-sort"],
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "no-shadow": "error",
+    "no-param-reassign": "error",
+    //Stylistic Issues
+    "comma-dangle": ["error", "always-multiline"],
+    "no-trailing-spaces": "error",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": ["const", "let", "var"],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      }
+    ],
+    "quotes": ["error", "single"],
+    //ECMAScript 6
+    "no-duplicate-imports": "error",
+    "no-useless-computed-key": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    //Sorting
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  }
 }
