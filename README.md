@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My tech talks
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to present all the tech talks I've ever completed.
+
+They are composed using different formats. The plan is to eventually move them all to markdown.
+
+You can also use this as a demo of how to combine Next.js with [Reveal.js](https://revealjs.com/) to create beautiful presentations.
 
 ## Getting Started
 
