@@ -18,15 +18,9 @@ export default function Home() {
 
       <div className='grid text-center lg:mb-0 md:grid-cols-2 lg:grid-cols-4 lg:text-left'>
         <TalkLink
-          name='Introduction to monads'
-          description='A primer on functional programming and monads'
-          src='https://slides.com/leontager/my-attempt-at-monads'
-        ></TalkLink>
-
-        <TalkLink
-          name='What <T>ype are you?'
-          description='An exploration of the Typescript type hierarchy'
-          src='https://slides.com/leontager/are-you-my-type'
+          name='Algebraic data types'
+          description='What is all the fuss about about ADTs?'
+          src='/talk/algebraic-data-types'
         ></TalkLink>
 
         <TalkLink
@@ -36,9 +30,15 @@ export default function Home() {
         ></TalkLink>
 
         <TalkLink
-          name='Algebraic data types'
-          description='What is all the fuss about about ADTs'
-          src='/talk/algebraic-data-types'
+          name='What <T>ype are you?'
+          description='An exploration of the Typescript type hierarchy'
+          src='https://slides.com/leontager/are-you-my-type'
+        ></TalkLink>
+
+        <TalkLink
+          name='Introduction to monads'
+          description='A primer on functional programming and monads'
+          src='https://slides.com/leontager/my-attempt-at-monads'
         ></TalkLink>
 
         <TalkLink
@@ -49,8 +49,14 @@ export default function Home() {
 
         <TalkLink
           name='Intermittent fasting'
-          description='What is IF and its benefits'
+          description='What is IF and its benefits?'
           src='https://docs.google.com/presentation/d/1VfQLQZgjAHZHu3rKvO633MDg7Y1lFawmwAcAbB7-Fyg/edit?usp=sharing'
+        ></TalkLink>
+
+        <TalkLink
+          name='Heart disease'
+          description='What is the root cause of heart disease?'
+          src='https://docs.google.com/presentation/d/1fYkBhSPNr1m0qfvkR03zMAS0BzOI47oPmPVxy5BEeOM/edit?usp=sharing'
         ></TalkLink>
       </div>
     </main>
